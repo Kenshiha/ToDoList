@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -5,8 +6,9 @@ public class Main {
    // static Node head = null; // start of the list
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         boolean running = true;
+        Task task = new Task();
 
         while (running) {
             System.out.println("\nToDo List Menu:");
@@ -16,12 +18,15 @@ public class Main {
             System.out.println("4. Exit");
 
             System.out.print("Choose an option: ");
-            int choice = scanner.nextInt();
+            int choice = sc.nextInt();
 
             // Use if/else or switch for options
             switch (choice) {
                 case 1:
                     // Add task code
+                    System.out.print("Enter Task :");
+                    String t = sc.nextLine();
+                    task.addtask(t);
                     break;
                 case 2:
                     // View tasks code
