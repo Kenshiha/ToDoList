@@ -6,7 +6,8 @@ public class Task {
     public void addtask(String t){
         task.add(t);
     }
-    public void rmTask(){
+    public void rmTask(int id){
+        task.remove(id);
 
     }
 }

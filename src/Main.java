@@ -30,6 +30,9 @@ public class Main {
                     break;
                 case 2:
                     // View tasks code
+                    System.out.print("Enter Task No:");
+                    int id = sc.nextInt();
+                    task.rmTask(id);
                     break;
                 case 3:
                     // Delete task code
